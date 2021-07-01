@@ -20,6 +20,9 @@ public class Runner {
 		b.getSpecies();
 		((LandAnimal) b).getLegs();
 		
+		a.animalSound();
+		b.animalSound();
+		
 		
 		LandAnimal landAnimal = (LandAnimal) b;
 		landAnimal.getLegs();

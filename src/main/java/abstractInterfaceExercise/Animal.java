@@ -11,6 +11,9 @@ public abstract class Animal implements EatBehaviour, SleepBehaviour {
 		this("unknown");
 	}
 	
+	public abstract void animalSound();
+	
+	
 	public Animal(String species) {
 		this.species = species;
 	}

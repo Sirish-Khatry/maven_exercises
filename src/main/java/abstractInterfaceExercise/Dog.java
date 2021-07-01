@@ -32,5 +32,11 @@ public class Dog extends LandAnimal  {
 		this.breed = breed;
 	}
 
+	@Override
+	public void animalSound() {
+		
+		System.out.println("Dog barks woof woof");
+	}
+
 
 }

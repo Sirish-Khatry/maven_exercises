@@ -32,6 +32,12 @@ public class Fish extends WaterAnimal {
 	public void setType(String type) {
 		this.type = type;
 	}
+
+	@Override
+	public void animalSound() {
+		System.out.println("Fish purrs purrs");
+		
+	}
 	
 	
 
