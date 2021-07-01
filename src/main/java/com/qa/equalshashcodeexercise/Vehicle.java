@@ -8,7 +8,9 @@ public class Vehicle {
 	private String type;
 	private int reg;
 	
-	
+	public Vehicle() {
+		
+	}
 	public Vehicle(int reg, String make, String model, double engineSize, String type) {
 		super();
 		this.reg = reg;
