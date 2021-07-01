@@ -11,8 +11,8 @@ public class Garage {
 	public static void main(String[] args) {
 		
 		
-		Car vehicle1 = new Car(1234, "VW", "Golf", 1.6, "Car", 5,  0);
-		Truck vehicle2 = new Truck(1234, "VW", "Golf", 1.6, "Truck", 200,  16);
+		Vehicle vehicle1 = new Car(1234, "VW", "Golf", 1.6, "Car", 5,  0);
+		Vehicle vehicle2 = new Truck(1234, "VW", "Golf", 1.6, "Truck", 200,  16);
 		
 		
 
