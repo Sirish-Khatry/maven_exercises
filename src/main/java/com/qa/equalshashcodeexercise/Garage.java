@@ -11,15 +11,20 @@ public class Garage {
 	public static void main(String[] args) {
 		
 		
-		Vehicle vehicle1 = new Car(1234, "VW", "Golf", 1.6, "Car", 5,  0);
-		Vehicle vehicle2 = new Truck(1234, "VW", "Golf", 1.6, "Truck", 200,  16);
+		Car vehicle1 = new Car(1234, "VW", "Golf", 1.6, "Car", 5,  0);
+		Truck vehicle2 = new Truck(1234, "VW", "Golf", 1.6, "Truck", 200,  16);
 		
+		
+
 		addVehicle(vehicle1);
 		addVehicle(vehicle2);
 		
 		for(Vehicle a : garage) {
 			if(a.getType() == "Car") {
-				System.out.println(a.getReg()+ " " + a.getMake()+ " " + a.getModel() + " " + a.getType());
+				System.out.println(a.getReg()+ " " + a.getMake()+ " " + a.getModel() + " " + a.getType() + " " + ((Car) a).getTotalCapacity() + " " + ((Car) a).getSpareWheels());
+			}
+			if(a.getType() == "Truck") {
+				System.out.println(a.getReg()+ " " + a.getMake()+ " " + a.getModel() + " " + a.getType() + " " + ((Truck) a).getMaxLoad() + " " + ((Truck) a).getWheels());
 			}
 		}
 		
@@ -32,10 +37,7 @@ public class Garage {
 		System.out.println(fixAllVehicle());
 		System.out.println(fixVehicle(1234));
 		
-		
-		
-		
-
+	
 	}
 	
 	public static void addVehicle(Vehicle vehicle) {
